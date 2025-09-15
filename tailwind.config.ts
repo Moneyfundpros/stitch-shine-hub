@@ -13,7 +13,29 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        grotesk: ['Space Grotesk', 'system-ui', 'sans-serif'],
+      },
       colors: {
+        /* App-specific colors */
+        "app-background": "hsl(var(--app-background))",
+        "app-surface": "hsl(var(--app-surface))",
+        "app-surface-secondary": "hsl(var(--app-surface-secondary))",
+        
+        "brand-primary": "hsl(var(--brand-primary))",
+        "brand-primary-hover": "hsl(var(--brand-primary-hover))",
+        "brand-success": "hsl(var(--brand-success))",
+        
+        "text-primary": "hsl(var(--text-primary))",
+        "text-secondary": "hsl(var(--text-secondary))",
+        "text-muted": "hsl(var(--text-muted))",
+        
+        "input-background": "hsl(var(--input-background))",
+        "input-border": "hsl(var(--input-border))",
+        "button-secondary": "hsl(var(--button-secondary))",
+        "button-secondary-hover": "hsl(var(--button-secondary-hover))",
+
+        /* Legacy compatibility */
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -46,16 +68,6 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
-        },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
         },
       },
       borderRadius: {
